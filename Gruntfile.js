@@ -11,7 +11,7 @@ module.exports = function(grunt) {
   var site_dir = "news";
 
   // URL endpoint
-  var site_path = "immersive-template";
+  var site_path = "texas-border";
 
   // stage URL for ftpass
   var ftp_stage_url = ['/stage_aas/projects', site_dir, site_path].join("/");
@@ -94,13 +94,16 @@ module.exports = function(grunt) {
       },
       prod: {
         files: {
-          'public/dist/scripts.js': [
+          'public/dist/index.js': [
             'node_modules/jquery/dist/jquery.js',
             'node_modules/underscore/underscore.js',
-            'node_modules/imagesloaded/imagesloaded.pkgd.js',
-            'node_modules/slick-carousel/slick/slick.js',
-            'src/js/slider.js',
+            // 'node_modules/imagesloaded/imagesloaded.pkgd.js',
             'src/js/main.js'
+          ],
+          'public/dist/stories.js': [
+            'node_modules/jquery/dist/jquery.js',
+            'node_modules/slick-carousel/slick/slick.js',
+            'src/js/slider.js'
           ]
         }
       }
@@ -159,7 +162,7 @@ module.exports = function(grunt) {
           partialsGlob: 'partials/*.hbs',
           templates: 'layouts',
           templateExt: 'hbs',
-          base: 'http://projects.statesman.com/templates/immersive/',
+          base: 'http://projects.statesman.com/news/texas-border/',
           helpers: require('./helpers'),
           nav: [
             {
@@ -168,42 +171,26 @@ module.exports = function(grunt) {
               file: "index",
               children: [
                 {
-                  title: "Sub-story 1",
+                  title: "No man's land",
                   subtitle: "Explaining story 1",
-                  file: "page1"
+                  file: "noman"
                 },
                 {
-                  title: "Sub-story 2",
+                  title: "Falcon Lake",
                   subtitle: "More on story 2",
-                  file: "page2"
-                },
-                {
-                  title: "Sub-story 3",
-                  subtitle: "And this is story 3",
-                  file: "page3"
+                  file: "falcon"
                 }
               ]
             },
             {
-              title: "Story 1",
+              title: "No man's land",
               subtitle: "More on story 1",
-              file: "page1"
+              file: "noman"
             },
             {
-              title: "Story 2",
+              title: "Falcon lake",
               subtitle: "More on story 2",
-              file: "page2"
-            },
-            {
-              title: "Story 3",
-              subtitle: "And this is story 3",
-              file: "page3",
-              children: [
-                {
-                  title: "Sub-story 4",
-                  file: "page4"
-                }
-              ]
+              file: "falcon"
             }
           ]
         }

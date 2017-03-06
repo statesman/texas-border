@@ -4,6 +4,11 @@
   "description": "Template for our projects",
   "keywords": "Austin, Austin news,",
   "thumbnail": "assets/share.png",
+  "photo1": {
+    "url": "http://projects.statesman.com/news/economic-mobility/assets/east-avenue.jpg",
+    "caption": "newspapers that you'll never read Frontline copyright dingbat CPC, media bias The Weekender WordPress SEO mathewi the notion of the.",
+    "credit": "Photographer / Statesman"
+  },
   "indexteaseMain": {
     "title": "",
     "storyUrl": "page1.html",
@@ -51,7 +56,9 @@
 <div class="container">
   <div class="row">
     <div id="main" class="col-xs-12">
-      {{> video-full-youtube page.videoOverview}}
+
+      {{> photo-block page.photo1}}
+
 
         <div class="row">
           <div class="header col-lg-12">
