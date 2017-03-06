@@ -1,0 +1,83 @@
+{
+  "template" : "story",
+  "title": "Immersive story",
+  "description": "Template for our projects",
+  "keywords": "Austin, Austin news,",
+  "thumbnail": "assets/share.png",
+  "indexteaseMain": {
+    "title": "",
+    "storyUrl": "page1.html",
+    "imageUrl": "assets/call-center.jpg",
+    "headline": "Tease headline",
+    "text": "Description."
+  },
+  "indexteaseProsecutor": {
+    "title": "",
+    "storyUrl": "page2.html",
+    "imageUrl": "assets/call-center.jpg",
+    "headline": "2nd headline",
+    "text": "2nd readout."
+  },
+  "indexteaseHistory": {
+    "title": "",
+    "storyUrl": "page3.html",
+    "imageUrl": "assets/call-center.jpg",
+    "headline": "3rd headline",
+    "text": "Third readout."
+  },
+  "videoOverview": {
+    "ytsrc": "https://www.youtube.com/embed/sggsXaCZNMs"
+  },
+  "editorial": {
+    "title": "Follow-up stories",
+    "links": [{
+      "name": "Editorial: Headline for article",
+      "url": "#"
+    },
+    {
+      "name": "Headline",
+      "url": "#"
+    },
+    {
+      "name": "Headline",
+      "url": "#"
+    }]
+  }
+}
+---
+
+
+
+<div class="container">
+  <div class="row">
+    <div id="main" class="col-xs-12">
+      {{> video-full-youtube page.videoOverview}}
+
+        <div class="row">
+          <div class="header col-lg-12">
+            <h1>Headline</h1>
+            <h2>Readout</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            {{> indextease page.indexteaseMain}}
+          </div>
+          <div class="col-sm-4">
+            {{> indextease page.indexteaseProsecutor}}
+          </div>
+          <div class="col-sm-4">
+            {{> indextease page.indexteaseHistory}}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            {{> related-list page.editorial}}
+          </div>
+        </div>
+
+
+    </div>
+  </div>
+</div>
+

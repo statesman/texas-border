@@ -1,0 +1,39 @@
+{
+  "name": "immersive-template",
+  "version": "0.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/statesman/immersive-template"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Statesman Interactives <interactives@statesman.com>",
+  "devDependencies": {
+    "grunt-bootlint": "^0.10.1",
+    "grunt-concurrent": "^2.3.0",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-connect": "^1.0.2",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-jshint": "^1.0.0",
+    "grunt-contrib-less": "^1.3.0",
+    "grunt-contrib-uglify": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-ftpush": "^0.3.3",
+    "grunt-generator": "^0.4.0",
+    "handlebars": "^4.0.5",
+    "marked": "^0.3.2",
+    "request": "^2.72.0"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "font-awesome": "^4.6.3",
+    "imagesloaded": "^4.1.0",
+    "jquery": "^3.1.1",
+    "request": "^2.73.0",
+    "scrollmagic": "^2.0.5",
+    "slick-carousel": "^1.6.0",
+    "underscore": "^1.8.3"
+  }
+}

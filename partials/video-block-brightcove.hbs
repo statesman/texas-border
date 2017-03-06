@@ -1,0 +1,22 @@
+<div class="photo-block">
+  <div class="embed-responsive embed-responsive-16by9">
+
+    {{!-- Start of Brightcove Player --}}
+    {{!-- HTML5 player template --}}
+
+    <div style="padding-top: 56.25%;">
+        <video data-video-id="{{ video-id }}"
+            data-account="{{ account-id }}"
+            data-player="{{ player-id }}"
+            data-embed="default"
+            class="video-js"
+            id="video-player-front"
+            controls
+            style="width: 100%; height: 100%; position: absolute; top: 0px; bottom: 0px; right: 0px; left: 0px;">
+        </video>
+    </div>
+    <script src="//players.brightcove.net/{{ account-id }}/{{ player-id }}_default/index.min.js"></script>
+    {{!-- End of Brightcove Player --}}
+  </div>
+  <p class="caption clearfix">newspapers that you'll never read Frontline copyright dingbat CPC, media bias The Weekender WordPress SEO mathewi the notion of the. <em class="pull-right">Photographer / Statesman</em></p>
+</div>

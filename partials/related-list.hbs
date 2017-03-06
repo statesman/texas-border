@@ -1,0 +1,11 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h3 class="panel-title">{{#if title}}{{title}}{{else}}Related stories{{/if}}</h3>
+  </div>
+  <div class="panel-body">
+    {{#if text}}<p>{{{text}}}</p>{{/if}}
+    {{#each links}}
+      <h4><a href="{{url}}">{{name}}</a></h4>
+    {{/each}}
+  </div>
+</div>
