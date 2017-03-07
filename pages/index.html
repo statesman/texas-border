@@ -1,90 +1,66 @@
 {
   "template" : "story",
-  "title": "Immersive story",
-  "description": "Template for our projects",
-  "keywords": "Austin, Austin news,",
-  "thumbnail": "assets/share.png",
-  "photo1": {
+  "title": "Inheriting inequality: Austin's segregation and gentrification",
+  "description": "As greater Austin booms, the poisonous legacy of segregation continues to cut off the African-American population from economic opportunities and its own cultural anchors, threatening the whole region's potential.",
+  "keywords": "Austin, Austin news, segregation, gentrification, East Austin, economy, Central Texas, Pflugerville, Clarksville, affordability",
+  "thumbnail": "assets/index-social-thumbnail.jpg",
+  "indexteaseNoMan": {
+    "title": "NO MAN’S LAND",
+    "storyUrl": "noman.html",
+    "imageUrl": "assets/call-center.jpg",
+    "headline": "Healine for no man's land story",
+    "text": "Readout to explain more about this story and the implications the weall will have on the people who live along the border."
+  },
+  "indexteaseFalcon": {
+    "title": "FALCON LAKE",
+    "storyUrl": "falcon.html",
+    "imageUrl": "assets/call-center.jpg",
+    "headline": "Falcon lake is a hard thing to fence",
+    "text": "Readout to explain more about this story and the implications the weall will have on the people who live along the border."
+  },
+  "indexteaseTour": {
+    "title": "ALONG THE BORDER",
+    "storyUrl": "tour.html",
+    "imageUrl": "assets/call-center.jpg",
+    "headline": "A photo essay",
+    "text": "Readout to explain more about this story and the implications the weall will have on the people who live along the border."
+  },
+  "mainPhoto": {
     "url": "http://projects.statesman.com/news/economic-mobility/assets/east-avenue.jpg",
-    "caption": "newspapers that you'll never read Frontline copyright dingbat CPC, media bias The Weekender WordPress SEO mathewi the notion of the.",
-    "credit": "Photographer / Statesman"
-  },
-  "indexteaseMain": {
-    "title": "",
-    "storyUrl": "page1.html",
-    "imageUrl": "assets/call-center.jpg",
-    "headline": "Tease headline",
-    "text": "Description."
-  },
-  "indexteaseProsecutor": {
-    "title": "",
-    "storyUrl": "page2.html",
-    "imageUrl": "assets/call-center.jpg",
-    "headline": "2nd headline",
-    "text": "2nd readout."
-  },
-  "indexteaseHistory": {
-    "title": "",
-    "storyUrl": "page3.html",
-    "imageUrl": "assets/call-center.jpg",
-    "headline": "3rd headline",
-    "text": "Third readout."
-  },
-  "videoOverview": {
-    "ytsrc": "https://www.youtube.com/embed/sggsXaCZNMs"
-  },
-  "editorial": {
-    "title": "Follow-up stories",
-    "links": [{
-      "name": "Editorial: Headline for article",
-      "url": "#"
-    },
-    {
-      "name": "Headline",
-      "url": "#"
-    },
-    {
-      "name": "Headline",
-      "url": "#"
-    }]
+    "caption": "Antilles zabrak grievous greedo jinn kessel dooku aayla hutt. Jinn skywalker mon solo leia mace skywalker mon. Hutt grievous maul skywalker watto binks darth. Skywalker wampa mon jabba binks. Antilles leia darth darth mara kessel cade.",
+    "credit": "Source: American-Statesman"
   }
 }
 ---
 
-
-
-<div class="container">
+<div class="container index">
+  <h1>Overarching headline? Probably not.</h1>
   <div class="row">
-    <div id="main" class="col-xs-12">
-
-      {{> photo-block page.photo1}}
+    <div class="col-xs-12">
 
 
-        <div class="row">
-          <div class="header col-lg-12">
-            <h1>Headline</h1>
-            <h2>Readout</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-4">
-            {{> indextease page.indexteaseMain}}
-          </div>
-          <div class="col-sm-4">
-            {{> indextease page.indexteaseProsecutor}}
-          </div>
-          <div class="col-sm-4">
-            {{> indextease page.indexteaseHistory}}
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-12">
-            {{> related-list page.editorial}}
-          </div>
-        </div>
-
-
+<div class="photo-full">
+        <img src="http://projects.statesman.com/news/economic-mobility/assets/east-avenue.jpg" alt="" class="img-responsive">
+        <p class="caption clearfix">This is a view of East Avenue, looking north from the top of Brackenridge Hospital in the 1960s. For decades, the road that became Interstate 35 in 1962 served as the de facto boundary that isolated Austin's African-American residents to the east. <em class="pull-right">Source: Texas Dept. of Transportation</em></p>
+</div>
     </div>
+
+        <div class="col-lg-12">
+          <h1>A Wall of Worry</h1>
+          <h2>Lucas ipsum dolor sit amet darth solo mon owen dantooine ben aayla droid antilles wicket. Mace palpatine coruscant kessel yoda. Mon skywalker padmé mandalore jabba hutt solo palpatine. Wampa fisto coruscant c-3p0 darth jade obi-wan. Mara darth antilles wookiee. Gamorrean c-3po moff moff moff greedo skywalker sebulba luke. Jango ponda darth darth dagobah palpatine calamari. Kit skywalker owen jabba. Moff jango skywalker antilles c-3po mara sith ben kenobi. Sidious wedge obi-wan han moff mon binks.</h2>
+        </div>
+
+          <div class="col-sm-4">
+      {{> indextease page.indexteaseNoMan}}
+          </div>
+          <div class="col-sm-4">
+      {{> indextease page.indexteaseFalcon}}
+          </div>
+          <div class="col-sm-4">
+      {{> indextease page.indexteaseTour}}
+          </div>
+
   </div>
 </div>
+
 
