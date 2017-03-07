@@ -25,16 +25,77 @@
     "headline": "A photo essay",
     "text": "Readout to explain more about this story and the implications the weall will have on the people who live along the border."
   },
+  "indexteaseFourth": {
+    "title": "FOURTH STORY",
+    "storyUrl": "index.html",
+    "imageUrl": "assets/call-center.jpg",
+    "headline": "Testing for new content",
+    "text": "Readout to explain more about this story and the implications the weall will have on the people who live along the border."
+  },
+  "indexteaseFifth": {
+    "title": "FIFTH STORY",
+    "storyUrl": "index.html",
+    "imageUrl": "assets/call-center.jpg",
+    "headline": "Testing for new content",
+    "text": "Readout to explain more about this story and the implications the weall will have on the people who live along the border."
+  },
   "mainPhoto": {
     "url": "http://projects.statesman.com/news/economic-mobility/assets/east-avenue.jpg",
     "caption": "Antilles zabrak grievous greedo jinn kessel dooku aayla hutt. Jinn skywalker mon solo leia mace skywalker mon. Hutt grievous maul skywalker watto binks darth. Skywalker wampa mon jabba binks. Antilles leia darth darth mara kessel cade.",
     "credit": "Source: American-Statesman"
-  }
+  },
+  "newCoverage": [
+      {
+        "story_data": {
+            "title": "No Man’s Land",
+            "storyUrl": "noman.html",
+            "imageUrl": "assets/call-center.jpg",
+            "headline": "Headline for no man's land story",
+            "text": "Readout to explain more about this story and the implications the weall will have on the people who live along the border."
+        }
+      },
+      {
+        "story_data": {
+            "title": "Tour the border",
+            "storyUrl": "tour.html",
+            "imageUrl": "assets/call-center.jpg",
+            "headline": "A visual trek",
+            "text": "Readout to explain more about this story and the implications the weall will have on the people who live along the border."
+        }
+      },
+      {
+        "story_data": {
+            "title": "Falcon lake",
+            "storyUrl": "falcon.html",
+            "imageUrl": "assets/call-center.jpg",
+            "headline": "Falcon Lake is hard to fence",
+            "text": "Readout to explain more about this story and the implications the weall will have on the people who live along the border."
+        }
+      },
+      {
+        "story_data": {
+            "title": "Fourth story",
+            "storyUrl": "fourth.html",
+            "imageUrl": "assets/call-center.jpg",
+            "headline": "Future-proofing with fourth story",
+            "text": "Readout to explain more about this story and the implications the weall will have on the people who live along the border."
+        }
+      },
+      {
+        "story_data": {
+            "title": "Fifth story",
+            "storyUrl": "fifth.html",
+            "imageUrl": "assets/call-center.jpg",
+            "headline": "Future-proofing with fifth story",
+            "text": "Readout to explain more about this story and the implications the weall will have on the people who live along the border."
+        }
+      }
+    ]
 }
 ---
 
 <div class="container index">
-  <h1>Overarching headline? Probably not.</h1>
+  <h2>Overarching headline? Probably not.</h2>
   <div class="row">
     <div class="col-xs-12">
 
@@ -50,15 +111,13 @@
           <h2>Lucas ipsum dolor sit amet darth solo mon owen dantooine ben aayla droid antilles wicket. Mace palpatine coruscant kessel yoda. Mon skywalker padmé mandalore jabba hutt solo palpatine. Wampa fisto coruscant c-3p0 darth jade obi-wan. Mara darth antilles wookiee. Gamorrean c-3po moff moff moff greedo skywalker sebulba luke. Jango ponda darth darth dagobah palpatine calamari. Kit skywalker owen jabba. Moff jango skywalker antilles c-3po mara sith ben kenobi. Sidious wedge obi-wan han moff mon binks.</h2>
         </div>
 
-          <div class="col-sm-4">
-      {{> indextease page.indexteaseNoMan}}
+
+        {{#each page.newCoverage}}
+          <div class="col-sm-4 grid-item">
+            {{> indextease story_data}}
           </div>
-          <div class="col-sm-4">
-      {{> indextease page.indexteaseFalcon}}
-          </div>
-          <div class="col-sm-4">
-      {{> indextease page.indexteaseTour}}
-          </div>
+        {{/each}}
+
 
   </div>
 </div>
