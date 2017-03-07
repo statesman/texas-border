@@ -33,15 +33,17 @@
 }
 ---
 
-
-
-<div class="container">
+<div class="container" style="background-color: red">
+  <h1>testy</h1>
   <div class="row">
-    <article id="main">
+    <div class="col-xs-12">
 
-      {{> photo-full page.mainPhoto}}   
 
-      <div class="container">
+<div class="photo-full">
+        <img src="http://projects.statesman.com/news/economic-mobility/assets/east-avenue.jpg" alt="" class="img-responsive">
+        <p class="caption clearfix">This is a view of East Avenue, looking north from the top of Brackenridge Hospital in the 1960s. For decades, the road that became Interstate 35 in 1962 served as the de facto boundary that isolated Austin's African-American residents to the east. <em class="pull-right">Source: Texas Dept. of Transportation</em></p>
+</div>
+    </div>
 
         <div class="col-lg-12">
           <h1>Inheriting inequality</h1>
@@ -57,8 +59,8 @@
           <div class="col-sm-4">
       {{> indextease page.indexteaseTour}}
           </div>
-      </div>
 
-    </article>
   </div>
 </div>
+
+
