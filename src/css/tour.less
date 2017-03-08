@@ -1,6 +1,40 @@
 // Styles specific to tour page
 
-// .photo-text {
-//     max-width: 80%;
-//     background-color: red;
-// }
+.tour .photo-map {
+    margin-top: 23px;
+}
+
+.tour .photo-text {
+    // background-color: yellow;
+    h2 {
+        font-size: 3em;
+        font-family: @font-family-serif;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 50px;
+    }
+}
+
+// changes for the tour gallery
+.tour hr {
+    border-color: @gray-light;
+    max-width: 60%;  
+}
+
+
+@media (min-width: @screen-sm-min) {
+    .photo-map {
+        background-color: yellow;
+        float: right;
+        margin-left: 20px;
+        margin-top: 30px;
+        max-width: 400px; 
+    }
+    .photo-text {
+        // background-color: red;
+        margin-left: 10%;
+        width: 80%;
+    }
+
+}
+
