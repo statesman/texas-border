@@ -171,14 +171,14 @@ module.exports = function(grunt) {
               file: "index",
               children: [
                 {
-                  title: "No man's land",
+                  title: "No man’s land",
                   subtitle: "Explaining story 1",
                   file: "noman"
                 },
                 {
-                  title: "Falcon Lake",
+                  title: "Border tour",
                   subtitle: "More on story 2",
-                  file: "falcon"
+                  file: "tour"
                 }
               ]
             },
@@ -188,9 +188,9 @@ module.exports = function(grunt) {
               file: "noman"
             },
             {
-              title: "Falcon lake",
+              title: "Border tour",
               subtitle: "More on story 2",
-              file: "falcon"
+              file: "tour"
             }
           ]
         }

@@ -27,33 +27,6 @@
             "headline": "A visual trek",
             "text": "Readout to explain more about this story and the implications the weall will have on the people who live along the border."
         }
-      },
-      {
-        "story_data": {
-            "title": "Falcon lake",
-            "storyUrl": "falcon.html",
-            "imageUrl": "assets/klw-border-final-30-700.jpg",
-            "headline": "Falcon Lake is hard to fence",
-            "text": "Readout to explain more about this story and the implications the weall will have on the people who live along the border."
-        }
-      },
-      {
-        "story_data": {
-            "title": "Fourth story",
-            "storyUrl": "fourth.html",
-            "imageUrl": "assets/call-center.jpg",
-            "headline": "Future-proofing with fourth story",
-            "text": "Readout to explain more about this story and the implications the weall will have on the people who live along the border."
-        }
-      },
-      {
-        "story_data": {
-            "title": "Fifth story",
-            "storyUrl": "fifth.html",
-            "imageUrl": "assets/call-center.jpg",
-            "headline": "Future-proofing with fifth story",
-            "text": "Readout to explain more about this story and the implications the weall will have on the people who live along the border."
-        }
       }
     ]
 }
@@ -77,7 +50,8 @@
 
 
     {{#each page.newCoverage}}
-      <div class="col-sm-4 grid-item"> <!-- Will be col-sm-6 for launch -->
+      <!-- Will be col-sm-4 once we have more stories -->
+      <div class="col-sm-6 grid-item">
         {{> indextease story_data}}
       </div>
     {{/each}}
