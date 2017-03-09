@@ -8,9 +8,7 @@
 {{#if page.description}}
   <meta property="og:description" content="{{page.description}}"/>
 {{/if}}
-{{#if page.thumbnail}}
-  <meta property="og:image" content="{{projectUrl page.thumbnail}}"/>
-{{/if}}
+<meta property="og:image" content="{{projectUrl page.share_fb}}"/>
 <meta property="og:url" content="{{projectUrl}}"/>
 
 {{!-- Twitter card tags --}}
@@ -20,7 +18,5 @@
 {{#if page.description}}
   <meta name="twitter:description" content="{{page.description}}" />
 {{/if}}
-{{#if page.thumbnail}}
-  <meta name="twitter:image" content="{{projectUrl page.thumbnail}}" />
-{{/if}}
+<meta name="twitter:image" content="{{projectUrl page.share_tw}}" />
 <meta name="twitter:url" content="{{projectUrl}}" />

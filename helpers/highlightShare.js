@@ -11,7 +11,7 @@ module.exports = function(text, context) {
     return 'https://twitter.com/intent/tweet' +
       '?text=' + encodeURIComponent(t) +
       '&url=' + encodeURIComponent(u) +
-      '&via=@aasinteractive' +
+      '&via=aasinteractive' +
       '&related=statesman';
   }
 
