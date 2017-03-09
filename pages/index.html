@@ -33,6 +33,7 @@
 ---
 
 <div class="container index">
+  <!-- this h2 may go away -->
   <h2>Overarching headline? Probably not.</h2>
   <div class="row">
     <div class="col-xs-12">
@@ -50,7 +51,7 @@
 
 
     {{#each page.newCoverage}}
-      <!-- Will be col-sm-4 once we have more stories -->
+      <!-- Will need to adjust columns as stories are added -->
       <div class="col-sm-6 grid-item">
         {{> indextease story_data}}
       </div>
