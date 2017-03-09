@@ -166,30 +166,30 @@ module.exports = function(grunt) {
           helpers: require('./helpers'),
           nav: [
             {
-              title: "Series",
-              subtitle: "Overview",
+              title: "Borderlands",
+              subtitle: "In the shadow of the wall",
               file: "index",
               children: [
                 {
                   title: "No man’s land",
-                  subtitle: "Living over the wall",
+                  subtitle: "Life beyond the wall",
                   file: "noman"
                 },
                 {
                   title: "Border tour",
-                  subtitle: "Scenes from those who live there",
+                  subtitle: "Postcards from the field",
                   file: "tour"
                 }
               ]
             },
             {
               title: "No man’s land",
-              subtitle: "Living beyond the wall",
+              subtitle: "Life beyond the wall",
               file: "noman"
             },
             {
               title: "Border tour",
-              subtitle: "Scenes from the field",
+              subtitle: "Postcards from the field",
               file: "tour"
             }
           ]
