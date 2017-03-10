@@ -101,8 +101,7 @@ module.exports = function(grunt) {
           'public/dist/maps.js': [
             'node_modules/jquery/dist/jquery.js',
             'node_modules/leaflet/dist/leaflet.js',            
-            'src/js/nav.js',
-            'src/js/map.js'
+            'src/js/nav.js'
           ]
         }
       }
