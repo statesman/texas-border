@@ -94,10 +94,8 @@ module.exports = function(grunt) {
       },
       prod: {
         files: {
-          'public/dist/index.js': [
+          'public/dist/nav.js': [
             'node_modules/jquery/dist/jquery.js',
-            'node_modules/underscore/underscore.js',
-            // 'node_modules/imagesloaded/imagesloaded.pkgd.js',
             'src/js/main.js'
           ],
           'public/dist/stories.js': [

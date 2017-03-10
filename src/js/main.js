@@ -1,4 +1,4 @@
-(function($, Slick) {
+(function($) {
 
   "use strict";
 
@@ -18,14 +18,6 @@
       $(elId).toggleClass('hidden-navbar-collapsed');
     });
 
-    // Setup sliders
-    $('.slider').each(function(i, el) {
-      $(el).imagesLoaded()
-        .always(function() {
-          new Slick(el);
-        });
-    });
-
   });
 
-}(jQuery, Slick));
+}(jQuery));
