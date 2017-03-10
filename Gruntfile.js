@@ -66,6 +66,7 @@ module.exports = function(grunt) {
         files: {
           "public/dist/style.css": [
               "node_modules/slick-carousel/slick/slick.less",
+              "node_modules/leaflet/dist/leaflet.css",
               "src/css/style.less"
           ]
         }
@@ -94,14 +95,14 @@ module.exports = function(grunt) {
       },
       prod: {
         files: {
-          'public/dist/nav.js': [
-            'node_modules/jquery/dist/jquery.js',
-            'src/js/main.js'
-          ],
           'public/dist/stories.js': [
             'node_modules/jquery/dist/jquery.js',
-            'node_modules/slick-carousel/slick/slick.js',
-            'src/js/slider.js'
+          ],
+          'public/dist/maps.js': [
+            'node_modules/jquery/dist/jquery.js',
+            'node_modules/leaflet/dist/leaflet.js',            
+            'src/js/nav.js',
+            'src/js/map.js'
           ]
         }
       }
