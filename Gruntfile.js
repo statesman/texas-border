@@ -169,25 +169,25 @@ module.exports = function(grunt) {
               file: "index",
               children: [
                 {
-                  title: "No man’s land",
-                  subtitle: "Life beyond the wall",
+                  title: "Cut off from Texas",
+                  subtitle: "Life in no man’s land",
                   file: "noman"
                 },
                 {
                   title: "Border tour",
-                  subtitle: "Postcards from the field",
+                  subtitle: "Big Bend to Brownsville",
                   file: "tour"
                 }
               ]
             },
             {
-              title: "No man’s land",
-              subtitle: "Life beyond the wall",
+              title: "Cut off from Texas",
+              subtitle: "Life in no man’s land",
               file: "noman"
             },
             {
               title: "Border tour",
-              subtitle: "Postcards from the field",
+              subtitle: "Big Bend to Brownsville",
               file: "tour"
             }
           ]
