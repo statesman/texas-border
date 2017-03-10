@@ -165,7 +165,7 @@ module.exports = function(grunt) {
           nav: [
             {
               title: "Borderlands",
-              subtitle: "In the shadow of the wall",
+              subtitle: "Series overview",
               file: "index",
               children: [
                 {
