@@ -1,4 +1,13 @@
-# immersive-template
+# Texas border series
+
+An index and some related pages on on an occasional series on issues that pertain to a growing border wall.
+
+It's built on the immersive template rig, as outlined below.
+
+There aren't any special considerations, really. It's just a project.
+
+
+## immersive-template
 
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
