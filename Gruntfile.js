@@ -177,6 +177,11 @@ module.exports = function(grunt) {
                   title: "Border tour",
                   subtitle: "Big Bend to Brownsville",
                   file: "tour"
+                },
+                {
+                  title: "Big Bend",
+                  subtitle: "God built wall",
+                  file: "tour"
                 }
               ]
             },
@@ -188,6 +193,11 @@ module.exports = function(grunt) {
             {
               title: "Border tour",
               subtitle: "Big Bend to Brownsville",
+              file: "tour"
+            },
+            {
+              title: "Big Bend",
+              subtitle: "God built wall",
               file: "tour"
             }
           ]

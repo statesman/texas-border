@@ -9,11 +9,11 @@
   "newCoverage": [
       {
         "story_data": {
-            "title": "No Man’s Land",
-            "storyUrl": "noman.html",
+            "title": "Big Bend",
+            "storyUrl": "bigbend.html",
             "imageUrl": "assets/klw-border-final-09-700.jpg",
-            "headline": "Living in no man’s land",
-            "text": "Border wall has residents caught between the U.S. border and fence that cuts off a chunk of Texas. Will a bigger barrier trap more land?"
+            "headline": "Big bend headline",
+            "text": "This is the tease that will be about the Big Bend story."
         }
       },
       {
@@ -23,6 +23,15 @@
             "imageUrl": "assets/noman/klw-border-final-02-700.jpg",
             "headline": "A visual trek",
             "text": "Take a tour of the Texas-Mexico border from Big Bend to Brownsville and see how the fence has changed life along the border — and how a new wall could bring even bigger transformations."
+        }
+      },
+      {
+        "story_data": {
+            "title": "No Man’s Land",
+            "storyUrl": "noman.html",
+            "imageUrl": "assets/klw-border-final-09-700.jpg",
+            "headline": "Living in no man’s land",
+            "text": "Border wall has residents caught between the U.S. border and fence that cuts off a chunk of Texas. Will a bigger barrier trap more land?"
         }
       }
     ]
@@ -53,17 +62,12 @@
 
     {{#each page.newCoverage}}
       <!-- Will need to adjust columns as stories are added -->
-      <div class="col-sm-6 grid-item">
+      <div class="col-sm-6 col-lg-4 grid-item">
         {{> indextease story_data}}
       </div>
     {{/each}}
 
 
-  </div>
-  <div class="row">
-    <div class="col-xs-12">
-      <div id="mapid"></div>
-    </div>    
   </div>
 </div>
 
