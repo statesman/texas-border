@@ -97,6 +97,7 @@ module.exports = function(grunt) {
         files: {
           'public/dist/stories.js': [
             'node_modules/jquery/dist/jquery.js',
+            'src/js/nav.js'
           ],
           'public/dist/maps.js': [
             'node_modules/jquery/dist/jquery.js',
