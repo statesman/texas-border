@@ -6,6 +6,29 @@ It's built on the immersive template rig, as outlined below.
 
 There aren't any special considerations, really. It's just a project.
 
+## Tease for methode
+
+There is a partial that is published out to be used as a tease in Methode to this series. It uses nprpym for reponsiveness.
+
+``` html
+<!-- This is tease text to insert into Methode -->
+<style>
+@media screen and (min-width: 400px) {
+    div#tease {    
+      width: 50%;
+      float: right;
+      margin-left: 12px;
+    }
+}
+</style>
+<div id="tease"></div>
+<script type="text/javascript" src="//pym.nprapps.org/pym.v1.min.js"></script>
+<script>
+    var pymParent = new pym.Parent('tease', '//host.coxmediagroup.com/aas/projects/news/texas-border/tease.html', {});
+</script>
+```
+
+
 
 ## immersive-template
 
