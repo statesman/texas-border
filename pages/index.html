@@ -9,6 +9,14 @@
   "newCoverage": [
       {
         "story_data": {
+            "title": "Falcon Lake",
+            "storyUrl": "http://www.mystatesman.com/news/state--regional-govt--politics/trump-border-wall-hits-snag-falcon-lake/KTkMOSihmdRsOj5W0i1JvM/",
+            "imageUrl": "assets/falconlake/klw-border-final-30-700.jpg",
+            "headline": "Trump’s border wall hits a snag in Falcon Lake",
+            "text": "Residents, officials say a wall makes no sense around the state’s most popular bass fishing lake."
+        }
+      },     {
+        "story_data": {
             "title": "Big Bend",
             "storyUrl": "http://www.mystatesman.com/news/with-land-already-hand-trump-eyes-big-bend-for-border-wall/wsOshEEM13x1NzXUPnu24M/",
             "imageUrl": "assets/bigbend/dyc-big-bend-16-700.jpg",
@@ -38,13 +46,14 @@
 }
 ---
 
+
 <div class="container index">
   <div class="row">
     <div class="col-xs-12">
 
       <div class="photo-full">
-        <img src="assets/bigbend/dyc-big-bend-40-1140.jpg" alt="" class="img-responsive">
-        <p class="caption clearfix"> The Rio Grande snakes through the landscape near Big Bend, with Mexico on the left and the United States on the right. “We’ve got a big, beautiful barrier, bigger than anything even Trump could build,” says Todd Beckett, Republican Party chairman for Presidio County. “It’s called the Chinati Mountains.” <em class="pull-right">Deborah Cannon / American-Statesman</em></p>
+        <a href="http://www.mystatesman.com/news/state--regional-govt--politics/trump-border-wall-hits-snag-falcon-lake/KTkMOSihmdRsOj5W0i1JvM/"><img src="assets/falconlake/klw-border-final-37-1140.jpg" alt="Falcon Lake in Zapata County" target="_blank" class="img-responsive"></a>
+        <p class="caption clearfix"> A beacon that indicates the border between Mexico and the U.S. stands in the middle of Falcon Lake in Zapata, Texas. Read out a former sheriff and leading voice for border security <a href="http://www.mystatesman.com/news/state--regional-govt--politics/trump-border-wall-hits-snag-falcon-lake/KTkMOSihmdRsOj5W0i1JvM/" target="_blank">says a wall makes no sense</a> in Zapata County.” <em class="pull-right">Kelly West / American-Statesman</em></p>
       </div>
     </div>
 
@@ -62,7 +71,7 @@
 
     {{#each page.newCoverage}}
       <!-- Will need to adjust columns as stories are added -->
-      <div class="col-sm-6 col-lg-4 grid-item">
+      <div class="col-sm-6 grid-item">
         {{> indextease story_data}}
       </div>
     {{/each}}
