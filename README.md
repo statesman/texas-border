@@ -4,11 +4,15 @@ An index and some related pages on on an occasional series on issues that pertai
 
 It's built on the immersive template rig, as outlined below.
 
-There aren't any special considerations, really. It's just a project.
+- An index that is an overview of the project
+- A vertical scroll photo gallery with maps of where the photos were taken. `tour.html`
+- There is one story, `noman.html`, that is inside this project. All the other stories are published in Methode and we just link to them from the index
+- There is a special tease for Methode. See below:
 
 ## Tease for methode
+There is a special layout called `tease.hbs` that allows us to publish just an HTML snipped that we then embed into Methode as a tease. It uses NPR's [pym.js](http://blog.apps.npr.org/pym.js/) to make it responsive in the mystatesman.com page.
 
-There is a partial that is published out to be used as a tease in Methode to this series. It uses nprpym for reponsiveness.
+We had to add a bit of inline CSS to the code to make it behave the way we wanted. This below is the tease embed code with the CSS. This was inserted as a code block after the 2nd or 3rd graf in the Methode stories.
 
 ``` html
 <!-- This is tease text to insert into Methode -->
