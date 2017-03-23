@@ -6,42 +6,46 @@
   "keywords": "Austin, Austin news, border, border wall, fence, Donald Trump",
   "share_tw": "assets/share-tw.png",
   "share_fb": "assets/share-fb.png",
-  "newCoverage": [
-      {
-        "story_data": {
-            "title": "Falcon Lake",
-            "storyUrl": "http://www.mystatesman.com/news/state--regional-govt--politics/trump-border-wall-hits-snag-falcon-lake/KTkMOSihmdRsOj5W0i1JvM/",
-            "imageUrl": "assets/falconlake/klw-border-final-30-700.jpg",
-            "headline": "Trump’s border wall hits a snag in Falcon Lake",
-            "text": "Residents, officials say a wall makes no sense around the state’s most popular bass fishing lake."
+  "newCoveragePair": [
+      [
+        {
+          "story_data": {
+              "title": "Falcon Lake",
+              "storyUrl": "http://www.mystatesman.com/news/state--regional-govt--politics/trump-border-wall-hits-snag-falcon-lake/KTkMOSihmdRsOj5W0i1JvM/",
+              "imageUrl": "assets/falconlake/klw-border-final-30-700.jpg",
+              "headline": "Trump’s border wall hits a snag in Falcon Lake",
+              "text": "Residents, officials say a wall makes no sense around the state’s most popular bass fishing lake."
+          }
+        },     {
+          "story_data": {
+              "title": "Big Bend",
+              "storyUrl": "http://www.mystatesman.com/news/with-land-already-hand-trump-eyes-big-bend-for-border-wall/wsOshEEM13x1NzXUPnu24M/",
+              "imageUrl": "assets/bigbend/dyc-big-bend-16-700.jpg",
+              "headline": "Trump eyes Big Bend for wall",
+              "text": "Federal lands attractive because they are already in hand, but fencing border through wilderness could have profound environmental and eco-tourism consequences."
+          }
         }
-      },     {
-        "story_data": {
-            "title": "Big Bend",
-            "storyUrl": "http://www.mystatesman.com/news/with-land-already-hand-trump-eyes-big-bend-for-border-wall/wsOshEEM13x1NzXUPnu24M/",
-            "imageUrl": "assets/bigbend/dyc-big-bend-16-700.jpg",
-            "headline": "Trump eyes Big Bend for wall",
-            "text": "Federal lands attractive because they are already in hand, but fencing border through wilderness could have profound environmental and eco-tourism consequences."
+      ],
+      [
+        {
+          "story_data": {
+              "title": "Rio Grande Valley",
+              "storyUrl": "noman.html",
+              "imageUrl": "assets/klw-border-final-09-700.jpg",
+              "headline": "Living in no man’s land",
+              "text": "Border wall has residents caught between the U.S. border and fence that cuts off a chunk of Texas. Will a bigger barrier trap more land?"
+          }
+        },
+        {
+          "story_data": {
+              "title": "Tour the border",
+              "storyUrl": "tour.html",
+              "imageUrl": "assets/noman/klw-border-final-02-700.jpg",
+              "headline": "A visual journey",
+              "text": "Take a tour of the Texas-Mexico border from Big Bend to Brownsville and see how the fence has changed life along the border — and how a new wall could bring even bigger transformations."
+          }
         }
-      },
-      {
-        "story_data": {
-            "title": "Rio Grande Valley",
-            "storyUrl": "noman.html",
-            "imageUrl": "assets/klw-border-final-09-700.jpg",
-            "headline": "Living in no man’s land",
-            "text": "Border wall has residents caught between the U.S. border and fence that cuts off a chunk of Texas. Will a bigger barrier trap more land?"
-        }
-      },
-      {
-        "story_data": {
-            "title": "Tour the border",
-            "storyUrl": "tour.html",
-            "imageUrl": "assets/noman/klw-border-final-02-700.jpg",
-            "headline": "A visual journey",
-            "text": "Take a tour of the Texas-Mexico border from Big Bend to Brownsville and see how the fence has changed life along the border — and how a new wall could bring even bigger transformations."
-        }
-      }
+      ]
     ]
 }
 ---
@@ -56,7 +60,9 @@
         <p class="caption clearfix"> A beacon that indicates the border between Mexico and the U.S. stands in the middle of Falcon Lake in Zapata, Texas. Read out a former sheriff and leading voice for border security <a href="http://www.mystatesman.com/news/state--regional-govt--politics/trump-border-wall-hits-snag-falcon-lake/KTkMOSihmdRsOj5W0i1JvM/" target="_blank">says a wall makes no sense</a> in Zapata County.” <em class="pull-right">Kelly West / American-Statesman</em></p>
       </div>
     </div>
+  </div>
 
+  <div class="row">
     <div class="col-lg-12 intro">
       <h1>Borderlands</h1>
       <h2>How will a more complete border wall affect those who live in its shadow?</h2>
@@ -68,16 +74,17 @@
       <p>The four-part series will run over the next month.</p><br>
 
     </div>
+  </div>
 
-    {{#each page.newCoverage}}
-      <!-- Will need to adjust columns as stories are added -->
+  {{#each page.newCoveragePair}}
+    <div class="row">
+    {{#each this}}
       <div class="col-sm-6 grid-item">
         {{> indextease story_data}}
       </div>
     {{/each}}
-
-
-  </div>
+    </div>
+  {{/each}}
 </div>
 
 
