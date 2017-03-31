@@ -32,7 +32,15 @@ We had to add a bit of inline CSS to the code to make it behave the way we wante
 </script>
 ```
 
+## Geographic tour
 
+Maps are made with
+http://datanews.github.io/locator/
+
+- tiles are mapbox
+- Map width is medium
+- aspect is 4.2
+- result converted to jpg for sizing
 
 ## immersive-template
 
