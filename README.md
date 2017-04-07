@@ -32,6 +32,14 @@ We had to add a bit of inline CSS to the code to make it behave the way we wante
 </script>
 ```
 
+``` html
+
+<scriptblock><![CDATA[<style>@media screen and (min-width: 400px) {div#tease {width: 50%; float: right; margin-left: 12px; } } </style> <div id="tease"></div> <script type="text/javascript" src="//pym.nprapps.org/pym.v1.min.js"></script> <script> var pymParent = new pym.Parent('tease', '//host.coxmediagroup.com/aas/projects/news/texas-border/tease.html', {}); </script>]]></scriptblock>
+
+```
+
+https://swing.producercmg.cloud/swing/app/#editor/41$2.0.809863769
+
 ## Geographic tour
 
 Maps are made with
