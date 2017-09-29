@@ -15,7 +15,7 @@
 
   {{> cmg-head-ads}}
   {{> cmg-head-metadata}}
-  <meta name="cmg:byline" content="{{page.byline}}">
+  <meta name="cmg:byline" content="{{#if page.byline}}{{#each page.byline}}{{this}}{{#unless @last}},{{/unless}}{{/each}}{{/if}}">
   {{> cmg-head-metrics}}
 </head>
 <body>
